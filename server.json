@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/meok-mcp-test-mcp",
+  "version": "1.0.0",
+  "description": "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs.",
+  "repository": { "url": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp", "source": "github" },
+  "packages": [{ "registryType": "pypi", "identifier": "meok-mcp-test-mcp", "version": "1.0.0", "runtimeHint": "python", "transport": { "type": "stdio" } }],
+  "remotes": [{ "type": "streamable-http", "url": "https://api.meok.ai/v1/dev/meok-mcp-test", "auth": "bearer" }]
+}
