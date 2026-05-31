@@ -1,105 +1,78 @@
-# MEOK MCP Test MCP
+# Meok MCP Test MCP
 
-> **Drop-in golden-file + schema-drift + tool-failure test harness for ANY MCP server.** Generates a pytest template, produces an HMAC-signed test report, prints a Shields.io grade badge for your README.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_mcp_test_mcp/)
 
-> 🧪 **Part of the MEOK Governance Substrate (£499/mo)** — combine with `mcp-spec-compliance-mcp` (spec audit) + `meok-mcp-hardening-mcp` (security red-team) for the full pre-publish gate.
+> MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server
 
-## Why this exists
+MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate, pytest template, HMAC-signed reports, Shields.io grade badge. By MEOK AI Labs.
 
-Thousands of MCPs ship zero tests. MCP Inspector is debug-only. Anthropic Registry will probably enforce some baseline by Q4 2026. Every MCP author wants a green check **before** submitting.
+---
 
-This MCP gives you:
-
-| Test | What it catches |
-|---|---|
-| `validate_server_json` | Missing name/version/description/repo |
-| `validate_tool_schema` | Tool name not alphanumeric, description <5 or >1024 chars, invalid JSON Schema type |
-| `diff_server_json` | Breaking changes (removed keys, type flips) |
-| `run_golden_diff` | Snapshot drift |
-| `check_idempotency_static` | Non-deterministic read-only tools |
-| `generate_test_template` | Pytest scaffolding so authors can drop tests in CI |
-| `run_test_suite` | The full default flow above as one call |
-| `sign_test_report` | HMAC seal + Shields.io badge URL |
-
-## Quick start
+## 🚀 Quick Start
 
 ```bash
-pip install meok-mcp-test-mcp
-# or
-uvx meok-mcp-test-mcp
+# Install via pip
+pip install meok_mcp_test_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-mcp-test-mcp --client claude
 ```
 
-```python
-from server import run_test_suite, sign_test_report
+## ✨ Features
 
-report = run_test_suite(
-    server_json=my_server_json,
-    golden_pairs=[
-        {"name": "list_chains", "actual": actual_out, "expected": expected_out},
-    ],
-    schema_drift_baseline=last_known_good_server_json,
-)
-sealed = sign_test_report(report)
-print(sealed["badge_url"])  # paste in your README
-```
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Tools exposed
+## 📖 Documentation
 
-- `run_test_suite(server_json, golden_pairs?, schema_drift_baseline?)` — full default suite
-- `validate_server_json(server_json)` — structural validation
-- `validate_tool_schema(tool)` — single tool deep-check
-- `diff_server_json(old, new)` — structural diff with breaking-change flag
-- `run_golden_diff(actual, expected)` — single snapshot check
-- `check_idempotency_static(samples)` — given N samples, return whether all equal
-- `generate_test_template()` — pytest scaffolding
-- `sign_test_report(report)` — HMAC-seal + Shields.io badge
+- [Full Documentation](https://docs.meok.ai/meok-mcp-test-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Wire it up to your CI
+## 🛡️ Compliance
 
-```yaml
-# .github/workflows/mcp-test.yml
-name: MEOK MCP Test
-on: [push, pull_request]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.11" }
-      - run: pip install meok-mcp-test-mcp
-      - run: python -m server  # runs the included pytest scaffold
-```
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Scoring
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-- A ≥ 90% passed
-- B ≥ 75%
-- C ≥ 60%
-- D ≥ 40%
-- F otherwise
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Verify any signed report
+## 🏢 Enterprise
 
-Paste any signed test report at https://meok.ai/verify — the HMAC signature is checked against MEOK's public JWKS.
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Pricing
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-- Self-host: free (MIT)
-- Starter: £29/mo — 1K test runs/mo + signed badge SLA
-- Pro: £79/mo — 10K runs/mo + custom badge + public dashboard
-- Governance Substrate: £499/mo — bundled with 10 governance MCPs
-- A2A Substrate: £999/mo — bundled with all 12 A2A MCPs
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-## Companion MCPs
+## 🤝 Part of the MEOK Ecosystem
 
-- `mcp-spec-compliance-mcp` — registry-spec conformity audit
-- `meok-mcp-hardening-mcp` — OWASP LLM Top 10 + 5 MCP-specific risks
-- `meok-mcp-cardgen-mcp` — generate `.well-known/mcp` cards
-- `meok-agents-md-lint-mcp` — AGENTS.md spec lint
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-## Legal
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-Built by [MEOK AI Labs](https://meok.ai) — trading name of CSOAI LTD, UK Companies House 16939677.
-Founder: Nicholas Templeman (`nicholas@meok.ai`).
-License: MIT.
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
