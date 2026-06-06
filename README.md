@@ -1,4 +1,7 @@
 # Meok MCP Test MCP
+mcp-name: io.github.CSOAI-ORG/meok-mcp-test-mcp
+
+# MEOK MCP Test MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -76,3 +79,6 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+Built by [MEOK AI Labs](https://meok.ai) — trading name of CSOAI LTD, UK Companies House 16939677.
+Founder: Nicholas Templeman (`nicholas@meok.ai`).
+License: MIT.

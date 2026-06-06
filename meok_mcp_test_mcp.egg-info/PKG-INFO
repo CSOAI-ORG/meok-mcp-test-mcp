@@ -18,6 +18,8 @@ License-File: LICENSE
 Requires-Dist: mcp[cli]>=1.3.0
 Dynamic: license-file
 
+mcp-name: io.github.CSOAI-ORG/meok-mcp-test-mcp
+
 # MEOK MCP Test MCP
 
 > **Drop-in golden-file + schema-drift + tool-failure test harness for ANY MCP server.** Generates a pytest template, produces an HMAC-signed test report, prints a Shields.io grade badge for your README.

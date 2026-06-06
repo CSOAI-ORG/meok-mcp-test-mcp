@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests
 ====================================================================
 
