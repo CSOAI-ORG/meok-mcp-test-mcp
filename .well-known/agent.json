@@ -1,0 +1,95 @@
+{
+  "name": "meok-mcp-test-mcp",
+  "description": "MEOK MCP Test MCP \u2014 golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
+  "url": "https://proofof.ai/scorecard/meok-mcp-test-mcp.html",
+  "version": "1.0.0",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "run_golden_diff",
+      "name": "Run Golden Diff",
+      "description": "run_golden_diff via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_tool_schema",
+      "name": "Validate Tool Schema",
+      "description": "validate_tool_schema via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_server_json",
+      "name": "Validate Server Json",
+      "description": "validate_server_json via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "diff_server_json",
+      "name": "Diff Server Json",
+      "description": "diff_server_json via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_idempotency_static",
+      "name": "Check Idempotency Static",
+      "description": "check_idempotency_static via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_test_template",
+      "name": "Generate Test Template",
+      "description": "generate_test_template via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "run_test_suite",
+      "name": "Run Test Suite",
+      "description": "run_test_suite via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_test_report",
+      "name": "Sign Test Report",
+      "description": "sign_test_report via meok-mcp-test-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

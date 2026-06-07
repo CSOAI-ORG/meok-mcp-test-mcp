@@ -1,0 +1,26 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-mcp-test-mcp",
+    "description": "MEOK MCP Test MCP \u2014 golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
+    "version": "1.0.0",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meok-mcp-test-mcp"
+      }
+    ],
+    "capabilities": [
+      "run_golden_diff",
+      "validate_tool_schema",
+      "validate_server_json",
+      "diff_server_json",
+      "check_idempotency_static",
+      "generate_test_template",
+      "run_test_suite",
+      "sign_test_report"
+    ]
+  }
+}
