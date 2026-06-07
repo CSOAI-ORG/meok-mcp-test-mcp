@@ -82,3 +82,27 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 Built by [MEOK AI Labs](https://meok.ai) — trading name of CSOAI LTD, UK Companies House 16939677.
 Founder: Nicholas Templeman (`nicholas@meok.ai`).
 License: MIT.
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "meok-mcp-test-mcp": {
+      "command": "uvx",
+      "args": ["meok-mcp-test-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install meok-mcp-test-mcp` then run the `meok-mcp-test-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `run_golden_diff` to …"
+- "Use `validate_tool_schema` to …"
+- "Use `validate_server_json` to …"

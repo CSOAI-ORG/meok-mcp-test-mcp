@@ -1,0 +1,24 @@
+# meok-mcp-test-mcp
+
+> MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- run_golden_diff
+- validate_tool_schema
+- validate_server_json
+- diff_server_json
+- check_idempotency_static
+- generate_test_template
+- run_test_suite
+- sign_test_report
+
+## Install
+```
+pip install meok-mcp-test-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-mcp-test-mcp/
+- Docs: https://meok.ai

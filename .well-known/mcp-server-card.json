@@ -1,0 +1,37 @@
+{
+  "name": "meok-mcp-test-mcp",
+  "title": "Meok Mcp Test Mcp",
+  "description": "MEOK MCP Test MCP \u2014 golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "run_golden_diff"
+    },
+    {
+      "name": "validate_tool_schema"
+    },
+    {
+      "name": "validate_server_json"
+    },
+    {
+      "name": "diff_server_json"
+    },
+    {
+      "name": "check_idempotency_static"
+    },
+    {
+      "name": "generate_test_template"
+    },
+    {
+      "name": "run_test_suite"
+    },
+    {
+      "name": "sign_test_report"
+    }
+  ]
+}
