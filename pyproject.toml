@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-mcp-test-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
