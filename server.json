@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-mcp-test-mcp",
-  "version": "1.0.0",
-  "description": "MEOK MCP Test MCP \u2014 golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
+  "version": "1.0.3",
+  "description": "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "meok-mcp-test-mcp",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
