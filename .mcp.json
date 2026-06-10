@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-mcp-test-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-mcp-test-mcp"
+      ]
+    }
+  }
+}
