@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: meok-mcp-test-mcp
-Version: 1.0.2
+Version: 1.0.3
 Summary: MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs.
 Author-email: Nicholas Templeman <nicholas@meok.ai>
 License: MIT

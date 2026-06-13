@@ -1,0 +1,168 @@
+{
+  "name": "Meok Mcp Test Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-mcp-test-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in pre-publish gate. Generates pytest templates. HMAC-signed test reports + Shields.io grade badge. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "run_golden_diff",
+      "name": "Run Golden Diff",
+      "description": "Run Golden Diff — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "validate_tool_schema",
+      "name": "Validate Tool Schema",
+      "description": "Validate Tool Schema — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "validate_server_json",
+      "name": "Validate Server Json",
+      "description": "Validate Server Json — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "diff_server_json",
+      "name": "Diff Server Json",
+      "description": "Diff Server Json — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_idempotency_static",
+      "name": "Check Idempotency Static",
+      "description": "Check Idempotency Static — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_test_template",
+      "name": "Generate Test Template",
+      "description": "Generate Test Template — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "run_test_suite",
+      "name": "Run Test Suite",
+      "description": "Run Test Suite — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_test_report",
+      "name": "Sign Test Report",
+      "description": "Sign Test Report — a tool of the meok-mcp-test-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-mcp-test-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
