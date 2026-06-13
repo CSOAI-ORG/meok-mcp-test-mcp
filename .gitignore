@@ -9,3 +9,6 @@ pypi-publish-20260609-060323.log
 
 # Auto-added during alignment sweep
 __pycache__/server.cpython-311.pyc
+
+# Auto-added during alignment sweep
+*.pyc
