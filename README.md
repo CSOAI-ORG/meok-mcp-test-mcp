@@ -109,3 +109,8 @@ Once configured, ask your assistant, for example:
 - "Use `run_golden_diff` to …"
 - "Use `validate_tool_schema` to …"
 - "Use `validate_server_json` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`test-case-generator-ai-mcp`](https://github.com/CSOAI-ORG/test-case-generator-ai-mcp)
